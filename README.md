@@ -1,47 +1,76 @@
-# Course Code & Materials
+# React Food Ordering Application
 
-This repository contains the course source code and other extra materials like slides.
+Create an application to order food/food items using React as a front end framework.
 
-## How to use
+## Project Goals
 
-The code snapshots are organized in multiple **branches** where every branch **represents a course section**.
+-   Build a web application from scratch, and apply knowledge of Javascript to solve a real world problem.
+-   Separate HTML, CSS, and JavaScript files in the application
+-   Build a dynamic application that a user can select an input (food item/s) and view the ordered items in a Cart.
+-   Craft a readme.md file that explains this app to the world
 
-For example, the branch [01-getting-started](https://github.com/academind/react-complete-guide-code/tree/01-getting-started) holds all code snapshots and extra materials for section 1 of the course ("Getting Started").
+## The Application
 
-You can switch branches via the branch dropdown above the directory explorer.
+-   The program takes the line and stop that a user is getting on at and the line and stop that user is getting off at and prints the journey and the total number of stops for the trip in the console:
+    planTrip('N', 'Times Square', '6', '33rd'); // This is only a suggested function name and signature.
+    // console.log() shows output similar to this: // "You must travel through the following stops on the N line: 34th, 28th, 23rd, Union Square." // "Change at Union Square." // "Your journey continues through the following stops: 23rd, 28th, 33rd." // "7 stops in total."
 
-![Click on the branch dropdown and then select the appropriate branch for the course section you're looking for](./selecting-a-branch.jpg)
+-   There are 3 subway lines: The N line has the following stops: Times Square, 34th, 28th, 23rd, Union Square, and 8th The L line has the following stops: 8th, 6th, Union Square, 3rd, and 1st The 6 line has the following stops: Grand Central, 33rd, 28th, 23rd, Union Square, and Astor Place.
 
-In most branches, you'll find multiple folders which organize the section-specific content further:
+-   All 3 subway lines intersect at Union Square, but there are no other intersection points. (For example, this means the 28th stop on the N line is different than the 28th street stop on the 6 line, so you'll have to differentiate this when you name your stops in the arrays.)
 
-- Often, you'll find a `/code` subfolder which contains any relevent code snapshots for the given course section
-- You also often find `/slides` folders which - guess what - contain the slides for the module
-- `/extra-files` typically contains extra files like `.css` files that might be attached to individual lectures in that course module
+-   Tell the user the number of stops AND the stops IN ORDER that they will pass through or change at.
 
-The folder names should generally be self-explanatory but also feel free to simply click around and see which materials are available.
+## Getting Started
 
-## Using code snapshots
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Code snapshots (which you find in `/code`) are there for you to compare your code to mine and find + fix errors you might have in your code.
+To run the code, navigate into the root folder via the `cd` command in your command prompt or terminal first.
 
-You can either view my code directly here on Github (you can open + view code files without issues here) or you download the snapshots.
+Next, run `npm install` to install all required dependencies (this will create a `/node_modules` folder).
 
-The subfolders in the `/code` folder are named such that mapping them to the course lectures is straightforward.
+Next, run `npm run start` to build and serve a copy of the application locally.
 
-### Downloading code snapshots
+## Prerequisites
 
-You can download all the content of a branch via the "Code" button here on Github. You can then either [clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) the repository or simply download the selected branch content as a ZIP file.
+Ensure that you have the following installed on your local machine:
 
-**Important:** You always download the **entire branch content!**
+## Installation
 
-You can then dive into the interesting folders (e.g. the individual code snapshots) locally on your hard drive.
+Clone the repo:
 
-### Running the attached code
+```
+git clone https://github.com/lukemico/react-food-order-app
 
-You can use the attached code simply to compare it to yours. But you can also run it.
+cd react-food-order-app
+```
 
-To run my code, navigate into a specific code snapshot folder via the `cd` command in your command prompt or terminal first.
+and then follow instructions in the Running section.
 
-Then run `npm install` to install all required dependencies (this will create a `/node_modules` folder).
+## Usage
 
-**Important:** If you're using the code for a module that requires API keys or a backend (e.g. the module about sending Http requests), you'll have to use **your backend URLs** or API keys. Mine won't work (I disabled my projects).# react-food-order-app
+-
+
+## Deployment
+
+View the [Live Demo](tbc) here.
+
+## Built With
+
+https://reactjs.org/
+[React](https://reactjs.org/) - the front end framework that pulls the application together
+[JavaScript](https://developer.mozilla.org/bm/docs/Web/JavaScript) - to handle the data and its inputs/ outputs.
+[HTML](https://www.w3.org/html/) - the framework that pulls together
+[CSS](https://www.w3.org/Style/CSS/) - the styling of the document.
+
+## Versioning
+
+GitHub used for versioning. For the versions available, see the tags on this repository.
+
+## Authors
+
+Luke Mico
+
+## License
+
+Source code distributed under the MIT license. Text, imagery and other assets copyright resource11, all rights reserved.
